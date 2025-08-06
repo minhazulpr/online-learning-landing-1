@@ -1,0 +1,450 @@
+:root{
+    --primary:#19c880;
+    --body: #fff;
+    --text: #211e1e;
+    --footer: #2a2726;
+    --gray: #757686;
+}
+
+/*===================
+===== Common =====
+=====================*/
+html,
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.section{
+    padding: 70px 0;
+}
+
+.section .main-title{
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 5px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.section .title{
+    font-weight: normal;
+    font-size: 2.6rem;
+}
+.section .subtitle{
+    color: #757686;
+}
+
+.btn-primary{
+    background-color: var(--primary);
+    padding: 10px 20px;
+    border-radius: 0;
+    border: 2px solid var(--primary);
+}
+.btn-primary-outline{
+    border: 2px solid var(--primary);
+    border-radius: 0;
+    color: var(--body);
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+.btn-primary-outline:hover{
+    background-color: var(--primary);
+    color: var(--body);
+}
+.btn-primary:hover{
+    background-color: var(--primary-1);
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+/*===================
+===== Navbar =====
+=====================*/
+.nav-wrapper{
+    background:linear-gradient(#0f10187d, rgb(21 20 33 / 71%)), url("../img/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 800px;
+}
+/* top Bar */
+.top-bar{
+    width: 100%;
+    padding: 0px 20px;
+    background-color: #fff;
+}
+.top-bar .icon{
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin-right: 10px;
+}
+.top-bar .input-group{
+    width: 50%;
+}
+.top-bar .input-group .form-control{
+    padding: 10px 10px;
+    border-radius: 0;
+    background-color: #f5f3f3;
+    border: 0;
+}
+
+.top-bar .input-group .form-control{
+    background-color: #f5f3f3;
+    outline: 0;
+    box-shadow: none;
+}
+.top-bar .input-group-text{
+    border-radius: 0;
+    background-color: var(--primary);
+    color: var(--body);
+    padding: 0px 20px;
+}
+.top-bar .breadcrumb{
+    margin-bottom: 0;
+    padding: 10px 0;
+    margin-left: 40px;
+}
+.top-bar .breadcrumb a{
+    color: var(--text);
+    text-decoration: none;
+}
+/* main nav */
+.navbar{
+    padding: 20px 0;
+    background-color: rgba(255,255,255,.1);
+}
+
+.navbar .nav-link{
+    color: var(--body);
+    text-transform: uppercase;
+    margin: 0px 20px;
+}
+.navbar .nav-link.active{
+    color: var(--primary);
+}
+.navbar .nav-link:hover{
+    color: var(--primary);
+}
+
+.navbar .navbar-brand{
+    color: #fff;
+}
+
+/* Hero section */
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-top: 130px;
+}
+.hero-section .hero-small-title{
+    text-transform: uppercase;
+    color: var(--primary);
+}
+.hero-section .hero-main-title{
+    text-transform: uppercase;
+    color: var(--body);
+    font-size: 4rem;
+}
+.hero-section .hero-subtitle{
+    color: var(--body);
+    margin-bottom: 50px;
+}
+.hero-btn{
+    text-transform: uppercase;
+}
+
+
+/*===================
+===== Value =====
+=====================*/
+.value-item{
+    padding: 30px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.value-item:first-child{
+    padding-left: 60px;
+}
+.value-item:last-child{
+    padding-right:60px;
+}
+.value-item .icon{
+    color: var(--primary);
+    font-size: 3.5rem;
+}
+.value-item .value-title{
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+.value-item .value-subtitle{
+    color: #757686;
+}
+/* button */
+.value-item .value-btn{
+    position: relative;
+}
+.value-item .value-btn a{
+    text-decoration: none;
+    color: var(--primary);
+}
+.value-item .value-btn .value-icon{
+    color: var(--primary);
+    background-color: #ffffff;
+    display: inline-block;
+    width: 40%;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+/* hover */
+.value-item:hover .value-btn .value-icon{
+    left: 30%;
+}
+
+/*===================
+===== Feature Course =====
+=====================*/
+.section-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.feature-btn{
+    color: var(--text);
+}
+.feature-course img{
+    height: 100%;
+}
+.feature-course .right{
+    padding: 20px 35px;
+}
+.feature-course .rating{
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #deab1f;
+}
+.feature-course .course-title{
+    text-decoration: none;
+    color: var(--text);
+    font-size: 1.3rem;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+.feature-course .breadcrumb{
+    margin-top: 10px;
+}
+.feature-course .breadcrumb .author-name{
+    color: var(--primary);
+    text-decoration: none;
+    font-style: italic;
+}
+.feature-course .course-price{
+    font-size: 2rem;
+    color: #deab1f;
+}
+
+
+/*===================
+===== About =====
+=====================*/
+.about{
+    background-color: #f7f7f7;
+}
+.about .about-right{
+    position: relative;
+}
+.about .video-icon{
+    position: absolute;
+    left: -7%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.status .count{
+    color: var(--primary);
+    font-size: 4rem;
+}
+.status .type{
+    font-size: 2rem;
+}
+.status .status-title{
+    color: var(--gray);
+}
+
+
+
+/*===================
+===== Courses =====
+=====================*/
+.courses{
+    background-color: #f7f7f7;
+}
+.courses .nav-link{
+    color: var(--text);
+    padding: 0;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+.courses .nav-link.active{
+    color: var(--primary);
+    text-decoration: underline;
+}
+.courses .nav-link:hover{
+    text-decoration: underline;
+    color: var(--primary);
+}
+
+/* Course Card */
+.course-card{
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+.course-card .thumb{
+    overflow: hidden;
+}
+.course-card .thumb img{
+    width: 100%;
+}
+.course-card .course-details{
+    padding: 30px;
+}
+.course-card .course-details .course-title{
+    text-decoration: none;
+    color: var(--text);
+    font-size: 1.3rem;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+.course-card .breadcrumb{
+    margin-top: 10px;
+}
+.course-card .breadcrumb .author-name{
+    color: var(--primary);
+    text-decoration: none;
+    font-style: italic;
+}
+.course-card .price-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.course-card .rating{
+    font-size: 0.9rem;
+    color: #deab1f;
+}
+.course-card .discount-price{
+    font-size: 2rem;
+    color: var(--primary);
+}
+.course-card .original-price{
+    font-size: 1.5rem;
+    color: #757686;
+    text-decoration:line-through;
+}
+
+/*===================
+===== Footer =====
+=====================*/
+footer p{
+    margin-bottom: 0;
+    color: var(--gray);
+}
+.footer-header{
+    margin-bottom: 40px;
+}
+
+.footer-header h2{
+    font-size: 20px;
+}
+.footer-nav{
+    display: flex;
+}
+.footer-nav .nav-link,
+.bottom-footer .nav-link{
+    padding: 0px 2px;
+    margin: 8px 0;
+    color: var(--gray);
+}
+.bottom-footer .nav-link{
+    margin: 0 10px;
+}
+
+/* hover */
+.footer-nav .nav-link:hover,
+.bottom-footer .nav-link:hover{
+    color: var(--primary);
+}
+
+/* Social */
+footer .social-icon a {
+    color: #fafafa;
+    border-radius: 100%;
+    background-color: var(--primary);
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+footer .social-icon a:nth-child(1):hover{
+    color: #fff;
+    background-color: #285091;
+    border-color: #285091;
+    transform: scale(1.1);
+}
+footer .social-icon a:nth-child(2):hover{
+    color: #fff;
+    background-color: #D92E2E;
+    border-color: #D92E2E;
+    transform: scale(1.1);
+}
+footer .social-icon a:nth-child(3):hover{
+    color: #fff;
+    background-color: #0073B1;
+    border-color: #0073B1;
+    transform: scale(1.1);
+    
+}
+footer .social-icon a:nth-child(4):hover{
+    color: #fff;
+    background-image: linear-gradient(45deg, #8f36b7, #F6BA50);
+    border-color: #8f36b7;
+    transform: scale(1.1);
+}
+footer .social-icon a:nth-child(5):hover{
+    color: #fff;
+    background-color: #E11A21;
+    border-color: #E11A21;
+    transform: scale(1.1);
+}
+footer .social-icon a:nth-child(6):hover{
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+    transform: scale(1.1);
+}
+
+
+/*===================
+===== Responsive =====
+=====================*/
+
+@media (max-width:992px){
+    
+}
+
+@media (max-width:768px){
+    
+
+}
