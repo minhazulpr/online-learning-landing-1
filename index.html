@@ -16,42 +16,21 @@
     <!-- Bootstrap Icon -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"/>
 
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/vendor/owl.theme.default.min.css">
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Praise&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"  rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <!-- Jquery -->
-    <script src="js/vendor/jquery.min.js" defer></script>
-
-    <!-- Owl Carousel Js -->
-    <script src="js/vendor/owl.carousel.min.js" defer></script>
-
+    
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" defer></script>
 
-    <!-- WOW Js -->
-    <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js" defer></script>
+    <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <!-- Counter -->
-    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js" defer></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 
     <!-- Custom JS -->
     <script src="js/main.js" defer></script>
@@ -66,45 +45,50 @@
         <!-- Topbar -->
         <div class="top-bar">
             <div class="container-fluid">
-                <div class="row">
-                <div class="col-md-6">
-                    <div class="d-flex align-items-center">
-                        <div class="d-flex align-items-center py-2 border-end">
-                            <i class="bi bi-envelope-fill icon"></i> 
-                            <p class="me-3 mb-0">tuanna.design@gmail.com</p>
-                        </div>
-                        <div class="d-flex align-items-center ms-4  py-2">
-                            <i class="bi bi-telephone-fill icon"></i>
-                            <p class="me-5 mb-0">001-1234-88888</p>
+                <div class="row g-0">
+                    <div class="col-lg-6 ">
+                        <div class="d-flex align-items-center top-contact">
+                            <div class="d-flex align-items-center py-2 border-end">
+                                <i class="bi bi-envelope-fill icon"></i> 
+                                <p class="me-3 mb-0">tuanna.design@gmail.com</p>
+                            </div>
+                            <div class="d-flex align-items-center ms-4  py-2">
+                                <i class="bi bi-telephone-fill icon"></i>
+                                <p class="me-5 mb-0">001-1234-88888</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 d-flex">
-                    <div class="input-group flex-nowrap ms-auto">
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
-                        <button class="input-group-text" id="addon-wrapping"><i class="bi bi-search"></i></button>
+                    <div class="col-lg-6 d-flex search-bar">
+                        <div class="input-group flex-nowrap">
+                            <input type="text" class="form-control" placeholder="What would you like to learn?" aria-label="Username" aria-describedby="addon-wrapping"/>
+                            <button class="input-group-text" id="addon-wrapping"><i class="bi bi-search"></i></button>
+                        </div>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Register</a></li>
+                                <li class="breadcrumb-item"><a href="#">Login</a></li>
+                            </ol>
+                        </nav>
                     </div>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Register</a></li>
-                            <li class="breadcrumb-item"><a href="#">Login</a></li>
-                        </ol>
-                    </nav>
                 </div>
-            </div>
             </div>
         </div>
 
         <!-- Main Nav -->
-        <nav class="navbar navbar-expand-lg nav-section">
+        <nav class="navbar navbar-expand-lg navbar-dark nav-section">
             <div class="container">
                 <a class="navbar-brand" href="#">Educa</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!-- Mobile -->
+                <a class="nav-link  d-lg-none" href="#"><i class="bi bi-bag-check-fill"></i></a>
+
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -122,11 +106,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-bag-check-fill"></i></a>
-                        </li>
                     </ul>
                 </div>
+
+                <a class="nav-link d-none d-lg-flex" href="#"><i class="bi bi-bag-check-fill"></i></a>
+                
             </div>
         </nav>
 
@@ -143,55 +127,44 @@
     <section class="value">
         <div class="container-fluid px-md-0">
             <div class="row g-0">
-                <div class="col-md-3">
+                <div class="col-sm-6 col-lg-3">
                     <div class="value-item">
                         <i class="bi bi-person icon"></i>
                         <h3 class="value-title">Learn From The Experts</h3>
                         <p class="value-subtitle">Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
                         <div class="value-btn">
-                            <a href="#">Read More</a>
-                            <div class="value-icon">
-                                <i class="bi bi-arrow-right"></i>
-                            </div>
+                            <a href="#">Read More <i class="bi bi-arrow-right value-icon"></i></a>
+                            
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-6 col-lg-3">
                     <div class="value-item">
                         <i class="bi bi-archive-fill icon"></i>
                         <h3 class="value-title">Book Library & Store</h3>
                         <p class="valu-subtitle">Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
                         <div class="value-btn">
-                            <a href="#">Read More</a>
-                            <div class="value-icon">
-                                <i class="bi bi-arrow-right"></i>
-                            </div>
+                            <a href="#">Read More <i class="bi bi-arrow-right value-icon"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-6 col-lg-3">
                     <div class="value-item">
                         <i class="bi bi-book icon"></i>
                         <h3 class="value-title">Best Course Online</h3>
                         <p class="valu-subtitle">Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
                         <div class="value-btn">
-                            <a href="#">Read More</a>
-                            <div class="value-icon">
-                                <i class="bi bi-arrow-right"></i>
-                            </div>
+                            <a href="#">Read More <i class="bi bi-arrow-right value-icon"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-6 col-lg-3">
                     <div class="value-item">
                         <i class="bi bi-globe icon"></i>
                         <h3 class="value-title">Best Industry Leaders</h3>
                         <p class="valu-subtitle">Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
                         <div class="value-btn">
-                            <a href="#">Read More</a>
-                            <div class="value-icon">
-                                <i class="bi bi-arrow-right"></i>
-                            </div>
+                            <a href="#">Read More <i class="bi bi-arrow-right value-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -205,19 +178,19 @@
         <div class="container">
             <div class="section-header">
                 <h1 class="title">Featured Courses</h1>
-                <div>
+                <div class="all-feature-btn">
                     <a href="#" class="btn btn-primary-outline feature-btn">View All</a>
                 </div>
             </div>
 
             <!-- course -->
              <div class="row">
-                <div class="col-md-6">
-                    <div class="row g-0 shadow shadow-md border border-1">
-                        <div class="col-md-5">
+                <div class="col-lg-6">
+                    <div class="row g-0 shadow shadow-md border border-1 mb-4">
+                        <div class="col-sm-5">
                             <img src="img/course-thumb.webp" width="100%" alt="">
                         </div>
-                        <div class="col-md-7 right">
+                        <div class="col-sm-7 right">
                             <div class="rating">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -237,12 +210,12 @@
                         </div>
                     </div>    
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                      <div class="row g-0 shadow shadow-md border border-1">
-                        <div class="col-md-5">
+                        <div class="col-sm-5">
                             <img src="img/course-thumb.webp" width="100%" alt="">
                         </div>
-                        <div class="col-md-7 right">
+                        <div class="col-sm-7 right">
                             <div class="rating">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -271,31 +244,31 @@
     <section class="about section">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <h1 class="title">About Ezuca</h1>
                     <p class="subtitle">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
 
                     <!-- status -->
                     <div class="row status">
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                             <p class="count mb-0">50<span class="type">M+</span></p>
                             <p class="status-title">STUDENTS LEARNING</p>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                             <p class="count mb-0">30<span class="type">K+</span></p>
                             <p class="status-title">ACTIVE COURSES</p>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                             <p class="count mb-0">340<span class="type">M+</span></p>
                             <p class="status-title">INSTRUCTORS ONLINE</p>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                             <p class="count mb-0">20<span class="type">+</span></p>
                             <p class="status-title">Country Reached</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="about-right">
                         <img src="img/about-bg.webp" width="100%" alt="">
                         <img src="img/video-icon.webp" class="video-icon" alt="">
@@ -306,12 +279,77 @@
     </section>
     <!-- About Section End -->
 
+    <!-- Testimonials -->
+    <section class="testimonials section">
+        <div class="container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slider Item -->
+                    <div class="swiper-slide">
+                        <div class="row">
+                            <div class="col-lg-6 order-lg-1">
+                                <p class="testimonial-title">Together as teachers, students and universities we can help make this education available for everyone.</p>
+                                <h3 class="testimonial-user">Russell Stephens - <span>University in UK</span></h3>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-center align-items-center mt-4 mt-lg-0">
+                                <div>
+                                    <img class="active-img" src="img/user-1.jpg.webp" alt="">
+                                    <img src="img/user-2.jpg.webp" alt="">
+                                    <img src="img/user-3.jpg.webp" alt="">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Slider Item -->
+                    <div class="swiper-slide">
+                        <div class="row">
+                            <div class="col-lg-6 order-lg-1">
+                                <p class="testimonial-title">Together as teachers, students and universities we can help make this education available for everyone.</p>
+                                <h3 class="testimonial-user">Russell Stephens - <span>University in UK</span></h3>
+                            </div>
+                            <div class="col-lg-6  d-flex justify-content-center align-items-center  mt-4 mt-lg-0">
+                                <div>
+                                    <img src="img/user-1.jpg.webp" alt="">
+                                    <img class="active-img" src="img/user-2.jpg.webp" alt="">
+                                    <img src="img/user-3.jpg.webp" alt="">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Slider Item -->
+                    <div class="swiper-slide">
+                        <div class="row">
+                            <div class="col-lg-6 order-lg-1">
+                                <p class="testimonial-title">Together as teachers, students and universities we can help make this education available for everyone.</p>
+                                <h3 class="testimonial-user">Russell Stephens - <span>University in UK</span></h3>
+                            </div>
+                            <div class="col-lg-6  d-flex justify-content-center align-items-center  mt-4 mt-lg-0">
+                                <div>
+                                    <img src="img/user-1.jpg.webp" alt="">
+                                    <img src="img/user-2.jpg.webp" alt="">
+                                    <img class="active-img" src="img/user-3.jpg.webp" alt="">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials End -->
+
     <!-- Courses  -->
     <section class="courses section">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header flex-wrap flex-md-nowrap">
                 <h1 class="title">Featured Courses</h1>
-                <div>
+                <div class="ms-md-auto">
                     <ul class="nav">
                         <li class="nav-item"><a href="#" class="nav-link active">All</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Business</a></li>
@@ -323,7 +361,7 @@
             <!-- courses -->
             <div class="row g-5">
                 <!-- Item -->
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="course-card">
                         <div class="thumb">
                             <img src="img/course-thumb.webp" alt="">
@@ -357,7 +395,7 @@
                 </div>
 
                 <!-- Item -->
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="course-card">
                         <div class="thumb">
                             <img src="img/course-thumb.webp" alt="">
@@ -391,7 +429,7 @@
                 </div>
 
                 <!-- Item -->
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="course-card">
                         <div class="thumb">
                             <img src="img/course-thumb.webp" alt="">
@@ -425,7 +463,7 @@
                 </div>
 
                 <!-- Item -->
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="course-card">
                         <div class="thumb">
                             <img src="img/course-thumb.webp" alt="">
@@ -459,7 +497,7 @@
                 </div>
 
                 <!-- Item -->
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="course-card">
                         <div class="thumb">
                             <img src="img/course-thumb.webp" alt="">
@@ -492,9 +530,109 @@
                     </div>
                 </div>
             </div>
+
+            <div class="d-flex justify-content-center mt-5">
+                <a href="#" class="btn btn-primary-outline feature-btn">View All Courses</a>
+            </div>
         </div>
     </section>
     <!-- Courses End  -->
+
+    <!-- News & Event -->
+    <section class="news-event section">
+        <div class="container">
+            <h1 class="title">Latest News & Events</h1>
+
+            <div class="row  g-5">
+                <div class="col-lg-6">
+                    <div class="news-card">
+                        <div class="news-thumb">
+                            <img src="img/news-thumb.webp" width="100%" alt="">
+                        </div>
+
+                        <a href="#" class="news-title">The Complete Financial Analyst Training & Investing Course</a>
+                        <div class="d-flex flex-wrap">
+                            <p class=" me-4 news-location"><i class="fa-solid fa-location-dot icon"></i> 40 Baria Sreet 133/2 NewYork City, US</p>
+                            <p class="news-date mt-0"><i class="fa-solid fa-calendar-days icon "></i> 10 Dec - 12 dec</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Side News Item -->
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="side-news-thumb">
+                                <img src="img/event-2.jpg.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="side-news-card">
+                                <p class="news-date"><i class="fa-solid fa-calendar-days icon "></i> 22 Mar 2018</p>
+                                <a href="#" class="side-news-title">Personalized online learning experience</a>
+
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#" class=" author-name">Ms. Lara Croft</a></li>
+                                        <li class="breadcrumb-item">02 Comments</li>
+                                    </ol>
+                                </nav>
+
+                                <p class="side-news-subtitle">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Side News Item -->
+                    <div class="row mt-5">
+                        <div class="col-sm-4">
+                            <div class="side-news-thumb">
+                                <img src="img/event-2.jpg.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="side-news-card">
+                                <p class="news-date"><i class="fa-solid fa-calendar-days icon "></i> 22 Mar 2018</p>
+                                <a href="#" class="side-news-title">Personalized online learning experience</a>
+
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#" class=" author-name">Ms. Lara Croft</a></li>
+                                        <li class="breadcrumb-item">02 Comments</li>
+                                    </ol>
+                                </nav>
+
+                                <p class="side-news-subtitle">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- News & Event End -->
+
+    <!-- Gallery -->
+    <section class="gallery section">
+        <img src="img/g1.webp" alt="">
+        <img src="img/g2.webp" alt="">
+        <img src="img/g3.webp" alt="">
+        <img src="img/g5.webp" alt="">
+    </section>
+    <!-- Gallery End -->
+
+    <!-- Accreditation -->
+    <section class="accreditation section">
+        <div class="container">
+            <div class="accreditation-gallery">
+                <img src="img/logo-1.png.webp" alt="">
+                <img src="img/logo-2.png.webp" alt="">
+                <img src="img/logo-3.png.webp" alt="">
+                <img src="img/logo-4.png.webp" alt="">
+                <img src="img/logo-5.png.webp" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Accreditation End -->
 
     <!-- Footer -->
     <footer class="section">
@@ -502,7 +640,7 @@
         <div class="container pb-5">
             <div class="row">
                 <!-- Left -->
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="footer-header">
@@ -528,7 +666,7 @@
                 </div>
 
                 <!-- Right -->
-                <div class="col-md-6">
+                <div class="col-lg-6 footer-right">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="footer-header">
@@ -536,13 +674,13 @@
                             </div>
 
                             <div class="footer-nav">
-                                <ul class="nav">
+                                <ul class="nav flex-column">
                                     <li class="nav-item"><a href="#" class="nav-link">About</a></li>
                                     <li class="nav-item"><a href="#" class="nav-link">Terms of Use</a></li>
                                     <li class="nav-item"><a href="#" class="nav-link">Privacy Policy</a></li>
                                     <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
                                 </ul>
-                                <ul class="nav">
+                                <ul class="nav flex-column">
                                     <li class="nav-item"><a href="#" class="nav-link">Documentation</a></li>
                                     <li class="nav-item"><a href="#" class="nav-link">Forums</a></li>
                                     <li class="nav-item"><a href="#" class="nav-link">Language Packs</a></li>
@@ -575,12 +713,14 @@
 
         <div class="container bottom-footer">
             <div class="row">
-                <div class="col-md-6">
-                    <img src="img/app-store.png.webp" alt="">
-                    <img src="img/play-store.png.webp" alt="">
+                <div class="col-lg-6 d-flex justify-content-center d-lg-block">
+                    <div class="mb-4 mb-lg-0">
+                        <img src="img/app-store.png.webp" alt="">
+                        <img src="img/play-store.png.webp" alt="">
+                    </div>
                 </div>
-                <div class="col-md-6 d-flex">
-                    <ul class="nav ms-auto">
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <ul class="nav ms-lg-auto align-items-center">
                         <li class="nav-item">
                             <a href="#" class="nav-link">DPA</a>
                         </li>
